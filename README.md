@@ -1,18 +1,50 @@
-# React + Vite
+# Swag Labs E-Commerce App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple e-commerce frontend inspired by the famous [Sauce Demo](https://www.saucedemo.com/) testing site.
 
-Currently, two official plugins are available:
+Built with modern React tools to practice routing, state management, persistence, and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Products Page Screenshot](public/products-screenshot.png)  
+*(Add a screenshot later if you want)*
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- User login (classic Sauce Demo credentials)
+- Product listing with sorting (A→Z, Z→A, low→high, high→low)
+- Product detail page
+- Add / Remove from cart toggle
+- Persistent cart using localStorage (survives refresh & tab close)
+- Cart page with quantity controls & total
+- Responsive header (centered title + right-aligned cart icon with badge)
+- Footer with social links (hidden on login page)
+- React Router for navigation
+- Tailwind CSS for styling
 
-Note: This will impact Vite dev & build performances.
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18 + Vite
+- **Routing**: react-router-dom v6
+- **Styling**: Tailwind CSS
+- **State Management**: React Context API
+- **Icons**: lucide-react
+- **Persistence**: browser localStorage
+- **Build Tool**: Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/ecommerceapp.git
+cd ecommerceapp
+
+# Install dependencies
+npm install
+# or
+yarn install
